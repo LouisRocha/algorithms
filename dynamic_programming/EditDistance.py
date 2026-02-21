@@ -18,7 +18,7 @@ def EditDistance(w1, w2):
                 map[i][j] = 1 + min(map[i - 1][j - 1],
                                     map[i][j - 1],
                                     map[i - 1][j])
-                
+
     # not part of algorithm but shows grid
     for picture in map:
         print(picture)
