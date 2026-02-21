@@ -5,11 +5,23 @@ import unittest
 class GeneAlignment:
     delta: dict[str, dict[str, int]]
     def best_alignment(self, x: str, y: str) -> tuple:
+        #init. matrix
         n = len(x)
         m = len(y)
         dp = [[0] * (m + 1) for _ in range(n + 1)]
+
+        dp[0][0] = 0
         for i in range(1, n + 1):
-            
+            dp[i][0] = dp[i - 1][0] + self.delta[x[i - 1]]["-"]
+        for j in range(1, m + 1):
+            dp[0][j] = dp[0][j - 1] + self.delta["-"][y[j - 1]]
+        
+        for i in range(1, n + 1):
+            for j in range(1, m + 1):
+                if []
+
+        for row in dp:
+            print(row)
 
 
 class TestGeneAlignment(unittest.TestCase):
