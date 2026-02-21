@@ -1,5 +1,5 @@
-"""knapsack_1 = 0/1 knapsack (no repetition)"""
-"""knapsack_2 = Unbounded knapsack (repetition)"""
+# """knapsack_1 = 0/1 knapsack (no repetition)"""
+# """knapsack_2 = Unbounded knapsack (repetition)"""
 
 def knapsack_1(weights: list[int], values: list[int], capacity: int) -> int:
     
